@@ -2,7 +2,7 @@ import React from 'react';
 
 function About(props) {
 
-    const skillsLeft = props.data.upto10skills;
+    const skillsLeft = [...props.data.upto10skills];
     const skillsRight = skillsLeft.splice(skillsLeft.length/2, skillsLeft.length/2);
     const skillsLeftHalf = skillsLeft.map((skill, index) => <li key={index}>{skill}</li>);
     const skillsRightHalf = skillsRight.map((skill, index) => <li key={index}>{skill}</li>);

@@ -31,15 +31,15 @@ function App () {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact render={() =>
+        <Route path="/" render={() =>
           <div>
             <Heading profilepic={profilepic} data={data.heading}/>
             <About resume={resume} image={follow} data={data.about}/>
             <Portfoilo screenshots={screenshots} data={data.project}/>
+            <Route path="/projectdetail/:id" component={ProjectDetail} />
             <ContactForm />
           </div>
         } />
-        <Route path="/post/:id" component={ProjectDetail} />
       </Switch>
     </Router>
   );
