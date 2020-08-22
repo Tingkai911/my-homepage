@@ -1,12 +1,18 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import Heading from './components/Heading';
 import About from './components/About';
 import Portfoilo from './components/Portfolio';
 import ContactForm from './components/ContactForm';
-import './css/default.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProjectDetail from './components/ProjectDetail';
+
+// Import css styles
+import './App.css';
+import './css/default.css';
+import './css/blue.css';
+import './css/green.css';
+import './css/purple.css';
 
 // Change text in homepage.json to change the contents displayed in the homepage
 import data from './homepageData.json';
