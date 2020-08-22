@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, Profiler } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Heading from './components/Heading';
@@ -6,13 +6,7 @@ import About from './components/About';
 import Portfoilo from './components/Portfolio';
 import ContactForm from './components/ContactForm';
 import ProjectDetail from './components/ProjectDetail';
-
-// Import css styles
-import './App.css';
 import './css/default.css';
-import './css/blue.css';
-import './css/green.css';
-import './css/purple.css';
 
 // Change text in homepage.json to change the contents displayed in the homepage
 import data from './homepageData.json';
@@ -34,20 +28,42 @@ const screenshots = [screenshot, profileimg, follow];
 
 
 function App () {
+  const [theme, setTheme] = React.useState('default');
+
+  function changeTheme(currentTheme) {
+    setTheme(currentTheme);
+    localStorage.setItem("theme", currentTheme);
+  }
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if(theme == null) {
+      changeTheme("default");
+    } else {
+      changeTheme(savedTheme);
+    } 
+  }, []);
+
   return (
-    <Router>
-      <Switch>
-        <Route path="/" render={() =>
-          <div>
-            <Heading profilepic={profilepic} data={data.heading}/>
-            <About resume={resume} image={follow} data={data.about}/>
-            <Portfoilo screenshots={screenshots} data={data.project}/>
-            <Route path="/projectdetail/:id" component={ProjectDetail} />
-            <ContactForm />
-          </div>
-        } />
-      </Switch>
-    </Router>
+    <div className={theme}>
+      <Router>
+        <Switch>
+          <Route path="/" render={() =>
+            <div>
+              <Heading setTheme={changeTheme} profilepic={profilepic} data={data.heading}/>
+              <About resume={resume} image={follow} data={data.about}/>
+              <Portfoilo screenshots={screenshots} data={data.project}/>
+
+              <Route path="/projectdetail/:id" render={()=>
+                <ProjectDetail />
+              } />
+
+              <ContactForm />
+            </div>
+          } />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 

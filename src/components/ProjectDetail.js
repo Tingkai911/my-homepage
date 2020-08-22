@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-function PostDetail(){
+function ProjectDetail(){
     return (
         <section className="s2">
             <div className="postdetail-wrapper">
                 <div className="nav-wrapper">
-
                     <Link to='/'>
                         <div className="dots-wrapper">
                             <div id="dot-1" className="browser-dot"></div>
@@ -88,4 +87,4 @@ function PostDetail(){
     );
 }
 
-export default PostDetail;
+export default ProjectDetail;

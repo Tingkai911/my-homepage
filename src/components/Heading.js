@@ -1,6 +1,13 @@
 import React from 'react';
 
 function Heading(props) {
+
+    function handleClick(event) {
+        const style = event.target.dataset.value;
+        console.log(style);
+        props.setTheme(style);
+    }
+
     return (
         <section className="s1">
             <div className="main-container">
@@ -27,10 +34,10 @@ function Heading(props) {
                         <img id="profile-pic" src={props.profilepic} alt="My Profile"/>
                         <h5 style={{textAlign: "center", lineHeight: 0}}>Personalize Theme</h5>
                         <div id="theme-options-wrapper">
-                            <div id="light-mode" className="theme-dot"></div>
-                            <div id="blue-mode" className="theme-dot"></div>
-                            <div id="green-mode" className="theme-dot"></div>
-                            <div id="purple-mode" className="theme-dot"></div>
+                            <div onClick={handleClick} data-value="default" id="light-mode" className="theme-dot"></div>
+                            <div onClick={handleClick} data-value="blue" id="blue-mode" className="theme-dot"></div>
+                            <div onClick={handleClick} data-value="green" id="green-mode" className="theme-dot"></div>
+                            <div onClick={handleClick} data-value="purple" id="purple-mode" className="theme-dot"></div>
                         </div>
                         <p id="settings-note">*Theme settings will be saved for <br></br> your next vist</p>
                     </div>

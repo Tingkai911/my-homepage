@@ -15,11 +15,65 @@
 	--buttonColor:black;
 }
 
+.blue {
+	--mainColor:#15202B;
+	--secondaryColor:#192734;
+
+	--borderColor:#164D56;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(25, 39, 52, 0.8);
+	--previewShadow:#111921;
+
+	--buttonColor:#17a2b8;
+}
+
+.green {
+	--mainColor:#606B56;
+	--secondaryColor:#515a48;
+
+	--borderColor:#161914;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(81, 90, 72, 0.8);
+	--previewShadow:#2a2f25;
+	--buttonColor:#669966;
+}
+
+.purple {
+	--mainColor:#46344E;
+	--secondaryColor:#382a3f;
+
+	--borderColor:#1d1520;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(29, 21, 32, 0.8);
+    --previewShadow:#2b202f;
+    
+	--buttonColor:#8534a3;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
 
 html, body {
     padding: 0;
     margin: 0;
+}
+
+body * { 
+    transition: 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -333,8 +387,21 @@ h6 {
     font-size: 14px;
 }
 
+@keyframes open {
+    from { max-height: 0; }
+    to { max-height: 5000px; }
+}
+
 .postdetail-wrapper {
+    overflow: hidden;
     padding-bottom: 50px;
+    animation-name: open;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.postdetail-wrapper>.nav-wrapper {
+    border-radius: 0;
 }
 
 #contact-form {
