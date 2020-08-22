@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Heading from './components/Heading';
+import About from './components/About';
+import Portfoilo from './components/Portfolio';
+import Contact from './components/Contact';
+import './css/default.css';
 
-function App() {
+// Change text in homepage.json to change the contents displayed in the homepage
+import data from './homepageData.json';
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Heading data={data.heading}/>
+      <About data={data.about}/>
+      <Portfoilo />
+      <Contact />
     </div>
   );
 }
