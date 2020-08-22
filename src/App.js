@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Profiler } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Heading from './components/Heading';
@@ -28,7 +28,7 @@ const screenshots = [screenshot, profileimg, follow];
 
 
 function App () {
-  const [theme, setTheme] = React.useState('default');
+  const [theme, setTheme] = useState('default');
 
   function changeTheme(currentTheme) {
     setTheme(currentTheme);

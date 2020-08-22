@@ -8,10 +8,10 @@ function About(props) {
     const skillsRightHalf = skillsRight.map((skill, index) => <li key={index}>{skill}</li>);
 
     return(
-        <section id="about" className="s2">
+        <section className="s2">
             <div className="main-container">
                 <div className="about-wrapper">
-                    <div className="about-me">
+                    <div id="about" className="about-me">
                         <h4>More about me</h4>
                         <p>{props.data.moreaboutme1}</p>
                         <p>{props.data.moreaboutme2}</p>
@@ -31,7 +31,7 @@ function About(props) {
                         </div>
                     </div>
 
-                    <div className="social-links">
+                    <div id="contact" className="social-links">
                         <img id="social-img" src={props.image} alt="My Social Page"/>
                         <h3>Contact Me</h3>
                         <a href={props.data.contactme.linkedin} target="_blank" rel="noopener noreferrer">Linkedin</a>

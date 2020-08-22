@@ -25,7 +25,8 @@ function Heading(props) {
                             <div id="dot-3" className="browser-dot"></div>
                         </div>
                         <ul id="navigation">
-                            <li><a style={{marginRight: 20}} href={"#about"}>About/Contact</a></li>
+                            <li><a style={{marginRight: 20}} href={"#about"}>About</a></li>
+                            <li><a style={{marginRight: 20}} href={"#contact"}>Contact</a></li>
                             <li><a href={"#portfolio"}>Projects</a></li>
                         </ul>
                     </div>

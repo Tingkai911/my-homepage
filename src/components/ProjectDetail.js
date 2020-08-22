@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-function ProjectDetail(props){
+function ProjectDetail(props) {
     console.log(props.id);
+    const mainRef = useRef(null);
+
+    useEffect(() => {
+        mainRef.current.focus();
+    }, [])
+
     return (
         <section className="s2">
             <div className="postdetail-wrapper">
-                <div className="nav-wrapper">
+                <div ref={mainRef} tabIndex="0" className="nav-wrapper">
                     <Link to='/'>
                         <div className="dots-wrapper">
                             <div id="dot-1" className="browser-dot"></div>
@@ -16,7 +22,8 @@ function ProjectDetail(props){
                     </Link>
 
                     <ul id="navigation">
-                        <li><a style={{marginRight: 20}} href={"#about"}>About/Contact</a></li>
+                        <li><a style={{marginRight: 20}} href={"#about"}>About</a></li>
+                        <li><a style={{marginRight: 20}} href={"#contact"}>Contact</a></li>
                         <li><a href={"#portfolio"}>Projects</a></li>
                     </ul>
                 </div>
@@ -27,7 +34,7 @@ function ProjectDetail(props){
                     <div className="img-container">
                         <img src="images/dash.jpg"/>
                     </div>
-                    
+
                     <h3>{props.data.projecttitle}</h3>
 
                     <p>This was a project I started back in november 2017 when I first learned python. I was the sole creator/developer for the first year of the project before I was able to hire help.
