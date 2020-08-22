@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ProjectDetail(){
+function ProjectDetail(props){
+    console.log(props.id);
     return (
         <section className="s2">
             <div className="postdetail-wrapper">
@@ -27,7 +28,7 @@ function ProjectDetail(){
                         <img src="images/dash.jpg"/>
                     </div>
                     
-                    <h3>Laboratory Management System</h3>
+                    <h3>{props.data.projecttitle}</h3>
 
                     <p>This was a project I started back in november 2017 when I first learned python. I was the sole creator/developer for the first year of the project before I was able to hire help.
                     <br/>

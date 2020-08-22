@@ -54,8 +54,8 @@ function App () {
               <About resume={resume} image={follow} data={data.about}/>
               <Portfoilo screenshots={screenshots} data={data.project}/>
 
-              <Route path="/projectdetail/:id" render={()=>
-                <ProjectDetail />
+              <Route path="/projectdetail/:id" render={(props) => 
+                <ProjectDetail data={data.project[props.match.params.id]} id={props.match.params.id}/>
               } />
 
               <ContactForm />
