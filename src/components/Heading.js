@@ -1,15 +1,16 @@
 import React from 'react';
-import profilepic from './../images/profilepic.png';
 
 function Heading(props) {
     return (
         <section className="s1">
             <div className="main-container">
+
                 <div className="greeting-wrapper">
                     <h1>Hi, I'm {props.data.name}</h1>
                 </div>
 
                 <div className="intro-wrapper">
+
                     <div className="nav-wrapper">
                         <div className="dots-wrapper">
                             <div id="dot-1" className="browser-dot"></div>
@@ -17,12 +18,13 @@ function Heading(props) {
                             <div id="dot-3" className="browser-dot"></div>
                         </div>
                         <ul id="navigation">
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a style={{marginRight: 20}} href={"#about"}>About/Contact</a></li>
+                            <li><a href={"#portfolio"}>Projects</a></li>
                         </ul>
                     </div>
+
                     <div className="left-column">
-                        <img id="profile-pic" src={profilepic} alt="Profile Picture"/>
+                        <img id="profile-pic" src={props.profilepic} alt="My Profile"/>
                         <h5 style={{textAlign: "center", lineHeight: 0}}>Personalize Theme</h5>
                         <div id="theme-options-wrapper">
                             <div id="light-mode" className="theme-dot"></div>
@@ -45,6 +47,7 @@ function Heading(props) {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
 
             </div>

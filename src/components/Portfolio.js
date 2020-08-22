@@ -1,11 +1,20 @@
 import React from 'react';
+import Project from './Project';
 
-function Portfolio() {
+function Portfolio(props) {
+    const projects = props.data.map((project, index) => 
+            <Project key={index} id={index} data={project} screenshot={props.screenshots[index]} />
+        );
     return (
-        <section className="s1">
+        <section id="portfolio" className="s1">
+
             <div className="main-container">
-                Portfolio
+                <h3 style={{textAlign: "center"}}>Some of my past projects</h3>
+                <div className="post-wrapper">
+                    {projects}
+                </div>
             </div>
+
         </section>
     );
 }

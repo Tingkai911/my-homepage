@@ -4,13 +4,33 @@
         "whatido": "I was a lead developer in a past life, now I enjoy teaching courses."
     },
     "about": {
-        "moreaboutme1": "I build new projects just to tickle my brain and love teaching others how they're made.",
+        "moreaboutme1": "I build new projects just to tickle my brain & love teaching others how they're made.",
         "moreaboutme2": "While I keep busy teaching courses, I still take interviews in search of a great team and projects that interest me.",
         "topexpertise": "Fullstack developer with primary focus on Django + React",
         "upto10skills": [
             "Python", "Django", "JavaScript", "React", "HTML/CSS",
             "C/C#", "ASP.NET", "SQL", "Java", "Git"
-        ]
-    }
+        ],
+        "contactme": {
+            "linkedin": "https://www.linkedin.com/in/ting-kai-chua-196211189/",
+            "github": "https://github.com/Tingkai911",
+            "email": "tingkai911@gmail.com",
+            "mobile": "+65 9088 9681"
+        }
+    },
+    "project": [
+        {
+            "projecttitle": "First Project",
+            "projectintro": "This is a sentence. Some more text."
+        },
+        {
+            "projecttitle": "Second Project",
+            "projectintro": "This is a sentence. Some more text. Even more text."
+        },
+        {
+            "projecttitle": "Third Project",
+            "projectintro": "Short Intro."
+        }
+    ]
 
 }
