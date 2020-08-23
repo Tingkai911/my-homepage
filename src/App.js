@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import Heading from './components/Heading';
 import About from './components/About';
 import Portfoilo from './components/Portfolio';
-import ContactForm from './components/ContactForm';
 import ProjectDetail from './components/ProjectDetail';
+import Footer from './components/Footer';
+
 import './css/default.css';
 
 // Change text in homepage.json to change the contents displayed in the homepage
@@ -78,10 +80,10 @@ function App () {
                   screenshots={projectDetailImg[props.match.params.id]} 
                   data={data.project[props.match.params.id]} 
                   key={props.match.params.id}
+                  id={props.match.params.id}
                 />
               }/>
-
-              <ContactForm />
+              <Footer name={data.heading.name} linkedin={data.about.contactMe.linkedin} repository={data.homepageRepository}/>
             </div>
           } />
         </Switch>

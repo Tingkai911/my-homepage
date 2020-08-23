@@ -41,6 +41,7 @@ function ProjectDetail(props) {
                     <div className="img-container">
                         <img 
                             className="project-screenshot" 
+                            alt="Project Screenshots"
                             src={props.screenshots.image}
                             style={{
                                     maxWidth: props.screenshots.maxWidth,

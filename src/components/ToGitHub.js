@@ -21,7 +21,7 @@ function ToGitHub(props) {
                 <div className="post-preview">
                     <h6 className="post-title">View my other projects at GitHub</h6>
                     <p className="post-intro"></p>
-                    <a href={props.link} target="_blank">
+                    <a href={props.link} target="_blank" rel="noopener noreferrer">
                         <span className="link">To GitHub</span>
                     </a>
                 </div>

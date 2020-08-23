@@ -70,6 +70,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body * { 
@@ -406,9 +407,9 @@ h6 {
 
 .postdetail-wrapper {
     overflow: hidden;
-    animation-name: open;
+    /* animation-name: open;
     animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 .postdetail-wrapper>.nav-wrapper {
@@ -423,6 +424,11 @@ h6 {
 a.project-link {
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 #contact-form {

@@ -1,11 +1,11 @@
 {
     "heading": {
         "name": "Ting Kai Chua",
-        "whatido": "I was a lead developer in a past life, now I enjoy teaching courses."
+        "whatido": "A hobbyist developer working towards becoming a full-time software engineer."
     },
     "about": {
-        "moreAboutMe1": "I build new projects just to tickle my brain & love teaching others how they're made.",
-        "moreAboutMe2": "While I keep busy teaching courses, I still take interviews in search of a great team and projects that interest me.",
+        "moreAboutMe1": "I build new projects just to tickle my brain & learn about new technologies.",
+        "moreAboutMe2": "Graduated from NUS Bachelor of Electrical Engineering in 2019. Worked as a Marketing & Sales Engineer for a year. Currently studying at NUS-ISS Graduate Diploma in System Analysis.",
         "topExpertise": "Fullstack developer with primary focus on Django + React",
         "upTo10Skills": [
             "Python", "Django", "JavaScript", "React", "HTML/CSS",
@@ -45,5 +45,6 @@
             "hostLink": "https://tingkai911.github.io/react-meme-generator/",
             "disclaimer": ""
         }
-    ]
+    ],
+    "homepageRepository": "https://github.com/Tingkai911/my-homepage"
 }
