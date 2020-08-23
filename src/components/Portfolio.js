@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './Project';
+import ToGitHub from './ToGitHub';
 
 function Portfolio(props) {
     const projects = props.data.map((project, index) => 
@@ -12,6 +13,7 @@ function Portfolio(props) {
                 <h3 style={{textAlign: "center"}}>Some of my past projects</h3>
                 <div className="post-wrapper">
                     {projects}
+                    <ToGitHub link={props.github} />
                 </div>
             </div>
 

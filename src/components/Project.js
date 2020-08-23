@@ -8,8 +8,8 @@ function Project(props) {
                 <img className="thumbnail" src={props.screenshot} alt="Project Screenshot" />
 
                 <div className="post-preview">
-                    <h6 className="post-title">{props.data.projecttitle}</h6>
-                    <p className="post-intro">{props.data.projectintro}</p>
+                    <h6 className="post-title">{props.data.projectTitle}</h6>
+                    <p className="post-intro">{props.data.projectIntro}</p>
                     <Link to={`/projectdetail/${props.id}`}>
                         <span className="link">Read More</span>
                     </Link>

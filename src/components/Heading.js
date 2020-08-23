@@ -4,13 +4,12 @@ function Heading(props) {
 
     function handleClick(event) {
         const style = event.target.dataset.value;
-        console.log(style);
         props.setTheme(style);
     }
 
     return (
         <section className="s1">
-            <div className="main-container">
+            <div id="top" className="main-container">
 
                 <div className="greeting-wrapper">
                     <h1>Hi, I'm {props.data.name}</h1>
