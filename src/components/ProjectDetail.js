@@ -76,7 +76,7 @@ function ProjectDetail(props) {
                         <li><a style={{marginRight: 20}} href={"#about"}>About</a></li>
                         <li><a style={{marginRight: 20}} href={"#contact"}>Contact</a></li>
                         <li><a style={{marginRight: 20}} href={"#portfolio"}>Projects</a></li>
-                        <li><a href={"#top"}>Back to top</a></li>
+                        <li><a href={"#top"}>Back to Top</a></li>
                     </ul>
                 </div>
             </div>

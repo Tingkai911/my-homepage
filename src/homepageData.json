@@ -23,7 +23,7 @@
             "projectTitle": "CS50 Blog",
             "projectIntro": "An functioninal blogging website build using Django, HTML/CSS with Bootstrap 4.",
             "paragraph1": "This was a project I build in 2020 when I first learned the basics of programming and web design from Havard's CS50x. This was the project that get me interested in Full Stack Web Development. I build CS50 Blog to mimic the common functionalities that modern blogging and social media webpages can do.",
-            "paragraph2": "User can view the blog posts without creating an account. Creating an account allows users to create their own blog posts, create a customise profile (such as uploading their own profile picture and toggle between light/dark mode), leave like/dislike and comments on other users's blog posts. There is also a password reset option in case users forgets their email address.",
+            "paragraph2": "User can view the blog posts without creating an account. Creating an account allows users to create their own blog posts, create a customise profile (such as uploading their own profile picture and toggle between light/dark mode), leave like/dislike and comments on other users's blog posts. There is also a password reset option in case users forgets their password.",
             "paragraph3": "CS50 Blog is currently hosted on Heroku with static files such as profile images of each user is stored in an AWS S3 bucket.",
             "technologiesUsed": [
                 "Python", "Django", "HTML/CSS", "Bootstrap 4", "JavaScript", "jQuery", "Heroku", "AWS (S3)"
@@ -35,7 +35,7 @@
         {
             "projectTitle": "Meme Generator",
             "projectIntro": "A simple and easy to use Meme Generator build using React. Gets meme images from an API.",
-            "paragraph1": "This was a project I build in 2020 to experiment with the popular React Framework.",
+            "paragraph1": "This was a project I build to learn and experiment with the popular React Framework.",
             "paragraph2": "Using JavaScript fetch(), the application get an array of images links from an API. We will choose the index by random to display a random meme image each time the user visit the webpage to make the experience more unpredictable and fun. Users are able to add their own text at the top and bottom rows to create their own meme. Users unsatisfied with the dankest of memes can press the 'Gen' button to change to another random meme image.",
             "paragraph3": "Meme Generator is currently hosted on GitHub Pages.",
             "technologiesUsed": [

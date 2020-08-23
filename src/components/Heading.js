@@ -8,8 +8,8 @@ function Heading(props) {
     }
 
     return (
-        <section className="s1">
-            <div id="top" className="main-container">
+        <section id="top" className="s1">
+            <div className="main-container">
 
                 <div className="greeting-wrapper">
                     <h1>Hi, I'm {props.data.name}</h1>
@@ -39,7 +39,7 @@ function Heading(props) {
                             <div onClick={handleClick} data-value="green" id="green-mode" className="theme-dot"></div>
                             <div onClick={handleClick} data-value="purple" id="purple-mode" className="theme-dot"></div>
                         </div>
-                        <p id="settings-note">*Theme settings will be saved for <br></br> your next vist</p>
+                        <p id="settings-note">*Theme settings will be saved for <br></br> your next visit</p>
                     </div>
                     
                     <div className="right-column">

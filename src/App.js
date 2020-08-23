@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import './css/default.css';
 
 // Change text in homepage.json to change the contents displayed in the homepage
-// DO NOT change the keys, onlychange the values
+// DO NOT change the keys, only change the values
 import data from './homepageData.json';
 
 // Import your profie picture here
@@ -22,11 +22,11 @@ import resume from './docs/resume.pdf'
 // Import About.js image here
 import follow from './images/follow.jpg';
 
-// Import Portfolio,js image here and add it to the array portfolioImg
+// Import Portfolio.js image here and add it to the array -> portfolioImg
 import cs50blog from './images/cs50blog.jpg';
 import memegenerator from './images/memegenerator.jpg';
 
-// Import ProjectDetail,js image here and add it to the array projectDetailImg
+// Import ProjectDetail,js image here and add it to the array -> projectDetailImg
 import cs50blog2 from './images/cs50blog2.jpg';
 
 // One image allowed for eact Portfolio post
@@ -80,10 +80,14 @@ function App () {
                   screenshots={projectDetailImg[props.match.params.id]} 
                   data={data.project[props.match.params.id]} 
                   key={props.match.params.id}
-                  id={props.match.params.id}
                 />
               }/>
-              <Footer name={data.heading.name} linkedin={data.about.contactMe.linkedin} repository={data.homepageRepository}/>
+
+              <Footer 
+                name={data.heading.name} 
+                linkedin={data.about.contactMe.linkedin} 
+                repository={data.homepageRepository}
+              />
             </div>
           } />
         </Switch>
