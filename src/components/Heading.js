@@ -35,8 +35,8 @@ function Heading(props) {
                         <h5 style={{textAlign: "center", lineHeight: 0}}>Personalize Theme</h5>
                         <div id="theme-options-wrapper">
                             <div onClick={handleClick} data-value="default" id="light-mode" className="theme-dot"></div>
+                            <div onClick={handleClick} data-value="dark" id="dark-mode" className="theme-dot"></div>
                             <div onClick={handleClick} data-value="blue" id="blue-mode" className="theme-dot"></div>
-                            <div onClick={handleClick} data-value="green" id="green-mode" className="theme-dot"></div>
                             <div onClick={handleClick} data-value="purple" id="purple-mode" className="theme-dot"></div>
                         </div>
                         <p id="settings-note">*Theme settings will be saved for <br></br> your next visit</p>

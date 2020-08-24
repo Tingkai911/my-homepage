@@ -9,20 +9,20 @@
 
     --themeDotBorder: #24292e;
 
-    --previewBg:rgb(251, 249, 243, 0.8);
+    --previewBg:rgba(251, 249, 243, 0.8);
     --previewShadow:#f0ead6;
     
     --buttonColor:black;
 
     --url: url("./../images/white-header-background.jpg");
     --mainOpacity: rgba(234, 234, 234, 0.5);
-    --secondaryOpacity: rgb(255, 255, 255, 0.5);
+    --secondaryOpacity: rgba(255, 255, 255, 0.5);
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: black;
 }
 
-.blue {
+.dark {
 	--mainColor:#15202B;
 	--secondaryColor:#192734;
 
@@ -33,39 +33,46 @@
 
 	--themeDotBorder:#FFF;
 
-	--previewBg:rgb(25, 39, 52, 0.8);
+	--previewBg:rgba(25, 39, 52, 0.8);
 	--previewShadow:#111921;
 
     --buttonColor:#17a2b8;
     
     --url: url("./../images/blue-header-background.jpg");
     --mainOpacity: rgba(21, 32, 43, 0.5);
-    --secondaryOpacity: rgb(25, 39, 52, 0.5);
+    --secondaryOpacity: rgba(25, 39, 52, 0.5);
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: white;
 }
 
-.green {
-	--mainColor:#606B56;
-	--secondaryColor:#515a48;
+.blue {
+	--mainColor:#dcf3ff;
+	--secondaryColor:#a2d2df;
 
 	--borderColor:#161914;
 
-	--mainText:#fff;
-	--secondaryText:#eeeeee;
+    --mainText: black;
+    --secondaryText: #4b5156;
 
-	--themeDotBorder:#FFF;
+    --themeDotBorder: #24292e;
 
-	--previewBg:rgb(81, 90, 72, 0.8);
-    --previewShadow:#2a2f25;
+    --previewBg:rgba(162, 210, 223, 0.3);
+    --previewShadow: #dcf3ff;
     
-	--buttonColor:#669966;
+    --buttonColor:#257ca3;
+    
+    /* --url: url("./../images/blue-header-background.jpg"); */
+    --mainOpacity: rgba(220, 243, 255, 0.5);
+    --secondaryOpacity: rgba(162, 210, 223, 0.5);
+    --linkColor: #17a2b8;
+    --previewBoxBorder: #17a2b8;
+    --mainHeadingColor: black;
 }
 
 .purple {
-    --mainColor:#734f96;
-    --secondaryColor:#967BB6; 
+    --mainColor:#46344E;
+    --secondaryColor:#382a3f; 
 
 	--borderColor:#1d1520;
 
@@ -74,17 +81,17 @@
 
 	--themeDotBorder:#FFF;
 
-	--previewBg:rgb(29, 21, 32, 0.8);
+	--previewBg:rgba(29, 21, 32, 0.8);
     --previewShadow:#2b202f;
     
     --buttonColor:#8534a3;
     
     --url: url("./../images/purple-header-background.jpg");
-    --mainOpacity: rgba(150, 123, 182, 0.5);
-    --secondaryOpacity: rgb(56, 42, 63, 0.5);
-    --linkColor: orange;
+    --mainOpacity: rgba(70, 52, 78, 0.5);
+    --secondaryOpacity: rgba(56, 42, 63, 0.5);
+    --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
-    --mainHeadingColor: black;
+    --mainHeadingColor: white;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
@@ -178,7 +185,7 @@ h6 {
 
 .intro-wrapper {
     /* background-color: var(--secondaryColor); */
-    background-color: var(--secondaryOpacity);
+    background-color: var(--secondaryOpacity); 
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
     margin-bottom: 50px;
@@ -289,16 +296,16 @@ h6 {
 	background-color: #fff;
 }
 
-#blue-mode {
+#dark-mode {
 	background-color: #192734;
 }
 
-#green-mode {
-	background-color: #78866b;
+#blue-mode {
+	background-color: #a2d2df;
 }
 
 #purple-mode {
-	background-color: #734f96;
+	background-color: #7E4C74;
 }
 
 #settings-note {
