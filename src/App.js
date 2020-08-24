@@ -80,6 +80,7 @@ function App () {
                   screenshots={projectDetailImg[props.match.params.id]} 
                   data={data.project[props.match.params.id]} 
                   key={props.match.params.id}
+                  id={props.match.params.id}
                 />
               }/>
 

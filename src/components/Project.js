@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Project(props) {
+
+    function handleClick() {
+        var ele = document.getElementById("project-detail");
+        if(ele != null) {
+            ele.scrollIntoView();
+        }    
+    }
+
     return (
         <div>
             <div className="post">
@@ -11,7 +19,7 @@ function Project(props) {
                     <h6 className="post-title">{props.data.projectTitle}</h6>
                     <p className="post-intro">{props.data.projectIntro}</p>
                     <Link to={`/projectdetail/${props.id}`}>
-                        <span className="link">Read More</span>
+                        <span onClick={handleClick} className="link">Read More</span>
                     </Link>
                 </div>
 

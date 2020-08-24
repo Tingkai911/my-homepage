@@ -19,7 +19,7 @@ function ProjectDetail(props) {
     return (
         <section className="s2">
             <div className="postdetail-wrapper">
-                <div ref={mainRef} tabIndex="0" className="nav-wrapper">
+                <div ref={mainRef} id="project-detail" tabIndex="0" className="nav-wrapper">
                     <Link to='/'>
                         <div className="dots-wrapper">
                             <div id="dot-1" className="browser-dot"></div>
