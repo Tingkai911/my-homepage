@@ -35,11 +35,15 @@ function About(props) {
                         <img id="social-img" src={props.image} alt="My Social Page"/>
                         <h3>Contact Me</h3>
                         <span>
-                            <a href={props.data.contactMe.linkedin} target="_blank" rel="noopener noreferrer">Linkedin</a>
+                            <a href={props.data.contactMe.linkedin} target="_blank" rel="noopener noreferrer">Linkedin: @{props.data.contactMe.linkedinUsername}</a>
                         </span>
-                        <br/>
+                        <br />
+                        <span>
+                            <a href={props.data.contactMe.twitter} target="_blank" rel="noopener noreferrer">Twitter: @{props.data.contactMe.twitterUsername}</a>
+                        </span>
+                        <br />
                         <span>Email: {props.data.contactMe.email} </span>
-                        <br/>
+                        <br />
                         <span>Mobile: {props.data.contactMe.mobile}</span>
                     </div>
                 </div>
