@@ -20,8 +20,7 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: black;
-    --url: url("./../images/black-header-background.jpg");
-
+    --url: url("./../images/purple-header-background.jpg");
 }
 
 .dark {
@@ -132,7 +131,7 @@ body * {
 /* var() cannot work with media queries as @media is not an element and do not inherit from <html>*/
 /* However we can define variables inside media queries */
 /* Not working */
-@media screen and (max-width:1024px), (max-device-width:1024px){
+/* @media screen and (max-width:1024px), (max-device-width:1024px){
     .dark {
         --url: url("./../images/black-header-background-iOS.jpg");
     }
@@ -144,7 +143,7 @@ body * {
     .purple {
         --url: url("./../images/purple-header-background-iOS.jpg");
     }
-}
+} */
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
