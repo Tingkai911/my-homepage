@@ -127,9 +127,16 @@ body * {
 }
 
 /* Images with large size dont display on iOS devices */
-@media all and (max-width:1024px), (max-device-width:1024px){
+@media screen and (max-width:1024px), (max-device-width:1024px){
     #top {
         background-image: var(--iOS);
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
 }
 
