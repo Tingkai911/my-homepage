@@ -107,10 +107,13 @@ body * {
 }
 
 #top {
-    background: var(--mainColor) var(--url) no-repeat top center;
-    /* background-image: var(--url); */
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
+    background-image: var(--url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
