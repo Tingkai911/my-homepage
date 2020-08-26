@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-homepage/static/css/main.09baa5ec.chunk.css",
+    "main.css": "/my-homepage/static/css/main.87a47a96.chunk.css",
     "main.js": "/my-homepage/static/js/main.8501534c.chunk.js",
     "main.js.map": "/my-homepage/static/js/main.8501534c.chunk.js.map",
     "runtime-main.js": "/my-homepage/static/js/runtime-main.386bf2e3.js",
@@ -8,9 +8,9 @@
     "static/js/2.7b61720f.chunk.js": "/my-homepage/static/js/2.7b61720f.chunk.js",
     "static/js/2.7b61720f.chunk.js.map": "/my-homepage/static/js/2.7b61720f.chunk.js.map",
     "index.html": "/my-homepage/index.html",
-    "precache-manifest.92715ec277d66a34aba49fad612eaaac.js": "/my-homepage/precache-manifest.92715ec277d66a34aba49fad612eaaac.js",
+    "precache-manifest.3bd750d47c56aac0a7e01eb4fe7a092a.js": "/my-homepage/precache-manifest.3bd750d47c56aac0a7e01eb4fe7a092a.js",
     "service-worker.js": "/my-homepage/service-worker.js",
-    "static/css/main.09baa5ec.chunk.css.map": "/my-homepage/static/css/main.09baa5ec.chunk.css.map",
+    "static/css/main.87a47a96.chunk.css.map": "/my-homepage/static/css/main.87a47a96.chunk.css.map",
     "static/js/2.7b61720f.chunk.js.LICENSE.txt": "/my-homepage/static/js/2.7b61720f.chunk.js.LICENSE.txt",
     "static/media/default.css": "/my-homepage/static/media/purple-header-background.f5a3fb31.jpg",
     "static/media/cs50blog.jpg": "/my-homepage/static/media/cs50blog.0274588e.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.386bf2e3.js",
     "static/js/2.7b61720f.chunk.js",
-    "static/css/main.09baa5ec.chunk.css",
+    "static/css/main.87a47a96.chunk.css",
     "static/js/main.8501534c.chunk.js"
   ]
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "054733b3f37fab3f6d3f58f2d568555c",
+    "revision": "68a6864332ed306130043a6fef72ef19",
     "url": "/my-homepage/index.html"
   },
   {
-    "revision": "895976eb8a85d51d9c2c",
-    "url": "/my-homepage/static/css/main.09baa5ec.chunk.css"
+    "revision": "aa453202262693dd2d39",
+    "url": "/my-homepage/static/css/main.87a47a96.chunk.css"
   },
   {
     "revision": "92c5b4135c87bbd05b5c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-homepage/static/js/2.7b61720f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "895976eb8a85d51d9c2c",
+    "revision": "aa453202262693dd2d39",
     "url": "/my-homepage/static/js/main.8501534c.chunk.js"
   },
   {
@@ -24,16 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-homepage/static/js/runtime-main.386bf2e3.js"
   },
   {
-    "revision": "1e9f0799cdb20c600185a845833814de",
-    "url": "/my-homepage/static/media/black-header-background-iOS.1e9f0799.jpg"
-  },
-  {
     "revision": "efdba04681a3215e786c0e996e4bc780",
     "url": "/my-homepage/static/media/black-header-background.efdba046.jpg"
-  },
-  {
-    "revision": "d0ce394e0c6e16e768439f6034d7169d",
-    "url": "/my-homepage/static/media/blue-header-background-iOS.d0ce394e.jpg"
   },
   {
     "revision": "9ccd703cd302c041fbc8693a9c87208c",
@@ -62,10 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "141ab7fbc6dc7a118f2d61bbbe51ced1",
     "url": "/my-homepage/static/media/profilepic.141ab7fb.png"
-  },
-  {
-    "revision": "fc52d553daf47e16f54c9ca944b1d4d4",
-    "url": "/my-homepage/static/media/purple-header-background-iOS.fc52d553.jpg"
   },
   {
     "revision": "f5a3fb31ebb82a372757e6b50aab7002",
