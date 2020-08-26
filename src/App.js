@@ -67,7 +67,7 @@ function App () {
 
   return (
     <div className={theme}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path={process.env.PUBLIC_URL + "/"} render={() =>
             <div>
