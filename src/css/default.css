@@ -20,7 +20,10 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: black;
-    --url: url("./../images/purple-header-background.jpg");
+}
+
+.default {
+    --url: url("./../images/white-header-background.jpg");
 }
 
 .dark {
