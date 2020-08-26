@@ -14,12 +14,14 @@
     
     --buttonColor:black;
 
-    --url: url("./../images/white-header-background.jpg");
+    /* --url: url("./../images/white-header-background.jpg"); */
     --mainOpacity: rgba(234, 234, 234, 0.5);
     --secondaryOpacity: rgba(255, 255, 255, 0.5);
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: black;
+    --url: url("./../images/black-header-background.jpg");
+
 }
 
 .dark {
@@ -129,6 +131,7 @@ body * {
 /* Images with large size (more than 1024px) tend to not display on iOS devices */
 /* var() cannot work with media queries as @media is not an element and do not inherit from <html>*/
 /* However we can define variables inside media queries */
+/* Not working */
 @media screen and (max-width:1024px), (max-device-width:1024px){
     .dark {
         --url: url("./../images/black-header-background-iOS.jpg");
