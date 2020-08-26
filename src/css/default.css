@@ -116,18 +116,28 @@ body * {
 }
 
 #top {
-    background-image: var(--url);
+    /* background-image: var(--url);
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -o-background-size: cover; */
+
+    background: var(--url) no-repeat center center fixed; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Images with large size dont display on iOS devices */
-@media screen and (max-width:1024px), (max-device-width:1024px){
+/* @media screen and (max-width:1024px), (max-device-width:1024px){
     #top {
         background-image: var(--iOS);
         background-size: cover;
@@ -138,7 +148,7 @@ body * {
         -moz-background-size: cover;
         -o-background-size: cover;
     }
-}
+} */
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
