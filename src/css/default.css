@@ -124,7 +124,7 @@ body * {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; */
-
+    z-index: -1;
     background: var(--url) no-repeat center center scroll; 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
