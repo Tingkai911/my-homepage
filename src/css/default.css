@@ -109,7 +109,7 @@ body * {
 #top {
     background-image: var(--url);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
