@@ -22,10 +22,6 @@
     --mainHeadingColor: black;
 }
 
-.default {
-    --url: url("./../images/white-header-background.jpg");
-}
-
 .dark {
 	--mainColor:#15202B;
 	--secondaryColor:#192734;
