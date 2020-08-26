@@ -69,13 +69,13 @@ function App () {
     <div className={theme}>
       <Router>
         <Switch>
-          <Route path="/" render={() =>
+          <Route path={process.env.PUBLIC_URL + "/"} render={() =>
             <div>
               <Heading setTheme={changeTheme} profilepic={profilepic} data={data.heading}/>
               <About resume={resume} image={follow} data={data.about}/>
               <Portfoilo screenshots={portfolioImg} data={data.project} github={data.about.github}/>
 
-              <Route path="/projectdetail/:id" render={(props) => 
+              <Route path={process.env.PUBLIC_URL + "/projectdetail/:id"} render={(props) => 
                 <ProjectDetail 
                   screenshots={projectDetailImg[props.match.params.id]} 
                   data={data.project[props.match.params.id]} 

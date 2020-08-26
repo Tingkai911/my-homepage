@@ -18,7 +18,7 @@ function Project(props) {
                 <div className="post-preview">
                     <h6 className="post-title">{props.data.projectTitle}</h6>
                     <p className="post-intro">{props.data.projectIntro}</p>
-                    <Link to={`/projectdetail/${props.id}`}>
+                    <Link to={process.env.PUBLIC_URL + `/projectdetail/${props.id}`}>
                         <span onClick={handleClick} className="link">Read More</span>
                     </Link>
                 </div>
