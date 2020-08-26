@@ -20,6 +20,8 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: black;
+
+    --iOS: url("./../images/white-header-background.jpg");
 }
 
 .dark {
@@ -44,6 +46,8 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: white;
+
+    --iOS: url("./../images/black-header-background-iOS.jpg");
 }
 
 .blue {
@@ -68,6 +72,8 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: black;
+
+    --iOS: url("./../images/blue-header-background-iOS.jpg");
 }
 
 .purple {
@@ -92,6 +98,9 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: white;
+
+    --iOS: url("./../images/purple-header-background-iOS.jpg");
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
@@ -115,6 +124,13 @@ body * {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+/* Images with large size dont display on iOS devices */
+@media all and (max-width:1024px), (max-device-width:1024px){
+    #top {
+        background-image: var(--iOS);
+    }
 }
 
 h1, h2, h3, h4, h5, h6, strong {
