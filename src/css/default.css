@@ -20,8 +20,6 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: black;
-
-    --iOS: url("./../images/white-header-background.jpg");
 }
 
 .dark {
@@ -46,8 +44,6 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: white;
-
-    --iOS: url("./../images/black-header-background-iOS.jpg");
 }
 
 .blue {
@@ -72,8 +68,6 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: black;
-
-    --iOS: url("./../images/blue-header-background-iOS.jpg");
 }
 
 .purple {
@@ -98,9 +92,6 @@
     --linkColor: #17a2b8;
     --previewBoxBorder: #17a2b8;
     --mainHeadingColor: white;
-
-    --iOS: url("./../images/purple-header-background-iOS.jpg");
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
@@ -116,15 +107,15 @@ body * {
 }
 
 #top {
-    /* background-image: var(--url);
+    background-image: var(--url);
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; */
-    background: var(--url) no-repeat center center scroll; 
+    -o-background-size: cover;
+    /* background: var(--url) no-repeat center center scroll; 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -132,22 +123,25 @@ body * {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
-/* Images with large size dont display on iOS devices */
-/* @media screen and (max-width:1024px), (max-device-width:1024px){
-    #top {
-        background-image: var(--iOS);
-        background-size: cover;
-        background-attachment: scroll;
-        background-position: center center;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+/* Images with large size (more than 1024px) tend to not display on iOS devices */
+/* var() cannot work with media queries as @media is not an element and do not inherit from <html>*/
+/* However we can define variables inside media queries */
+@media screen and (max-width:1024px), (max-device-width:1024px){
+    .dark {
+        --url: url("./../images/black-header-background-iOS.jpg");
     }
-} */
+
+    .blue {
+        --url: url("./../images/blue-header-background-iOS.jpg");
+    }
+
+    .purple {
+        --url: url("./../images/purple-header-background-iOS.jpg");
+    }
+}
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
