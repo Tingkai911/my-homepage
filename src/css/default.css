@@ -14,7 +14,7 @@
     
     --buttonColor:black;
 
-    /* --url: url("./../images/white-header-background.jpg"); */
+    --url: url("./../images/white-header-background.jpg");
     --mainOpacity: rgba(234, 234, 234, 0.5);
     --secondaryOpacity: rgba(255, 255, 255, 0.5);
     --linkColor: #17a2b8;
