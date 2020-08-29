@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Heading(props) {
 
@@ -9,7 +9,10 @@ function Heading(props) {
     function handleClick(event) {
         const style = event.target.dataset.value;
         props.setTheme(style);
+        changeBackground(style);
+    }
 
+    function changeBackground(style) {
         if (style == "dark")
             setBackground({backgroundImage: `url(${backgroundImage[1]})`});
         else if (style == "blue")
@@ -19,6 +22,11 @@ function Heading(props) {
         else
             setBackground({backgroundImage: `url(${backgroundImage[0]})`});
     }
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem("theme");
+        changeBackground(savedTheme);
+    }, []);
 
     function scrollTo(event) {
         document.getElementById(event.target.dataset.value).scrollIntoView(true);
