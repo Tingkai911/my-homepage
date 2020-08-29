@@ -1,14 +1,31 @@
-import React from 'react';
+import React , {useState} from 'react';
 
 function Heading(props) {
+
+    const backgroundImage = [...props.backgroundImage];
+
+    const [currentBackground, setBackground] = useState({backgroundImage: `url(${backgroundImage[0]})`});
 
     function handleClick(event) {
         const style = event.target.dataset.value;
         props.setTheme(style);
+
+        if (style == "dark")
+            setBackground({backgroundImage: `url(${backgroundImage[1]})`});
+        else if (style == "blue")
+            setBackground({backgroundImage: `url(${backgroundImage[2]})`});
+        else if (style == "purple")
+            setBackground({backgroundImage: `url(${backgroundImage[3]})`});
+        else
+            setBackground({backgroundImage: `url(${backgroundImage[0]})`});
+    }
+
+    function scrollTo(event) {
+        document.getElementById(event.target.dataset.value).scrollIntoView(true);
     }
 
     return (
-        <section id="top" className="s1">
+        <section id="top" style={currentBackground} className="s1">
             <div className="main-container">
 
                 <div className="greeting-wrapper">
@@ -24,9 +41,9 @@ function Heading(props) {
                             <div id="dot-3" className="browser-dot"></div>
                         </div>
                         <ul id="navigation">
-                            <li><a style={{marginRight: 20}} href={"#about"}>About</a></li>
-                            <li><a style={{marginRight: 20}} href={"#contact"}>Contact</a></li>
-                            <li><a href={"#portfolio"}>Projects</a></li>
+                            <li><span onClick={scrollTo} data-value="about" className="link" style={{marginRight: 20}}>About</span></li>
+                            <li><span onClick={scrollTo} data-value="contact" className="link" style={{marginRight: 20}}>Contact</span></li>
+                            <li><span onClick={scrollTo} data-value="portfolio" className="link">Projects</span></li>
                         </ul>
                     </div>
 

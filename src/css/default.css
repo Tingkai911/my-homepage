@@ -22,10 +22,6 @@
     --mainHeadingColor: black;
 }
 
-.default {
-    --url: url("./../images/white-header-background.jpg");
-}
-
 .dark {
 	--mainColor:#15202B;
 	--secondaryColor:#192734;
@@ -42,7 +38,7 @@
 
     --buttonColor:#17a2b8;
     
-    --url: url("./../images/black-header-background.jpg");
+    /* --url: url("./../images/black-header-background.jpg"); */
     --mainOpacity: rgba(21, 32, 43, 0.5);
     --secondaryOpacity: rgba(25, 39, 52, 0.5);
     --linkColor: #17a2b8;
@@ -66,7 +62,7 @@
     
     --buttonColor:#257ca3;
     
-    --url: url("./../images/blue-header-background.jpg");
+    /* --url: url("./../images/blue-header-background.jpg"); */
     --mainOpacity: rgba(220, 243, 255, 0.5);
     --secondaryOpacity: rgba(162, 210, 223, 0.5);
     --linkColor: #17a2b8;
@@ -90,7 +86,7 @@
     
     --buttonColor:#8534a3;
     
-    --url: url("./../images/purple-header-background.jpg");
+    /* --url: url("./../images/purple-header-background.jpg"); */
     --mainOpacity: rgba(70, 52, 78, 0.5);
     --secondaryOpacity: rgba(56, 42, 63, 0.5);
     --linkColor: #17a2b8;
@@ -111,7 +107,7 @@ body * {
 }
 
 #top {
-    background-image: var(--url);
+    /* background-image: var(--url); */
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
@@ -166,7 +162,8 @@ a {
 
 .link {
     text-decoration: none;
-	color: #17a2b8;
+    color: #17a2b8;
+    cursor: pointer;
 }
 
 ul {

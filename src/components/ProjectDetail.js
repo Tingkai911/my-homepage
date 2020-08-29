@@ -16,6 +16,10 @@ function ProjectDetail(props) {
         disclaimer = `*${props.data.disclaimer}`;
     }
 
+    function scrollTo(event) {
+        document.getElementById(event.target.dataset.value).scrollIntoView(true);
+    }
+
     return (
         <section className="s2">
             <div className="postdetail-wrapper">
@@ -29,9 +33,9 @@ function ProjectDetail(props) {
                     </Link>
 
                     <ul id="navigation">
-                        <li><a style={{marginRight: 20}} href={"#about"}>About</a></li>
-                        <li><a style={{marginRight: 20}} href={"#contact"}>Contact</a></li>
-                        <li><a href={"#portfolio"}>Projects</a></li>
+                        <li><span onClick={scrollTo} data-value="about" className="link" style={{marginRight: 20}}>About</span></li>
+                        <li><span onClick={scrollTo} data-value="contact" className="link" style={{marginRight: 20}}>Contact</span></li>
+                        <li><span onClick={scrollTo} data-value="portfolio" className="link">Projects</span></li>
                     </ul>
                 </div>
 
@@ -73,10 +77,10 @@ function ProjectDetail(props) {
                 
                 <div className="nav-wrapper">
                     <ul id="navigation">
-                        <li><a style={{marginRight: 20}} href={"#about"}>About</a></li>
-                        <li><a style={{marginRight: 20}} href={"#contact"}>Contact</a></li>
-                        <li><a style={{marginRight: 20}} href={"#portfolio"}>Projects</a></li>
-                        <li><a href={"#top"}>Back to Top</a></li>
+                        <li><span onClick={scrollTo} data-value="about" className="link" style={{marginRight: 20}}>About</span></li>
+                        <li><span onClick={scrollTo} data-value="contact" className="link" style={{marginRight: 20}}>Contact</span></li>
+                        <li><span onClick={scrollTo} data-value="portfolio" className="link" style={{marginRight: 20}}>Projects</span></li>
+                        <li><span onClick={scrollTo} data-value="top" className="link">Back To Top</span></li>
                     </ul>
                 </div>
             </div>

@@ -13,6 +13,12 @@ import './css/default.css';
 // DO NOT change the keys, only change the values
 import data from './homepageData.json';
 
+// Import background images in Heading.js here and add it to the array -> backgroundImg
+import defaultBackground from './images/white-header-background.jpg';
+import darkBackground from './images/black-header-background.jpg';
+import blueBackground from './images/blue-header-background.jpg';
+import purpleBackground from './images/purple-header-background.jpg';
+
 // Import your profie picture here
 import profilepic from './images/profilepic.png';
 
@@ -48,6 +54,14 @@ const projectDetailImg = [
     }
 ];
 
+// One background image for each of the 4 different color themes
+const backgroundImage = [
+  defaultBackground,
+  darkBackground,
+  blueBackground,
+  purpleBackground
+];
+
 function App () {
   const [theme, setTheme] = useState('default');
 
@@ -71,9 +85,22 @@ function App () {
         <Switch>
           <Route path="/" render={() =>
             <div>
-              <Heading setTheme={changeTheme} profilepic={profilepic} data={data.heading}/>
-              <About resume={resume} image={follow} data={data.about}/>
-              <Portfoilo screenshots={portfolioImg} data={data.project} github={data.about.github}/>
+              <Heading 
+                setTheme={changeTheme} 
+                backgroundImage={backgroundImage} 
+                profilepic={profilepic} 
+                data={data.heading}
+              />
+              <About 
+                resume={resume} 
+                image={follow} 
+                data={data.about}
+              />
+              <Portfoilo 
+                screenshots={portfolioImg} 
+                data={data.project} 
+                github={data.about.github}
+              />
 
               <Route path="/projectdetail/:id" render={(props) => 
                 <ProjectDetail 
