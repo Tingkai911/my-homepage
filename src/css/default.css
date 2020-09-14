@@ -14,7 +14,6 @@
     
     --buttonColor:black;
 
-    /* --url: url("./../images/white-header-background.jpg"); */
     --mainOpacity: rgba(234, 234, 234, 0.5);
     --secondaryOpacity: rgba(255, 255, 255, 0.5);
     --linkColor: #17a2b8;
@@ -38,7 +37,6 @@
 
     --buttonColor:#17a2b8;
     
-    /* --url: url("./../images/black-header-background.jpg"); */
     --mainOpacity: rgba(21, 32, 43, 0.5);
     --secondaryOpacity: rgba(25, 39, 52, 0.5);
     --linkColor: #17a2b8;
@@ -62,7 +60,6 @@
     
     --buttonColor:#257ca3;
     
-    /* --url: url("./../images/blue-header-background.jpg"); */
     --mainOpacity: rgba(220, 243, 255, 0.5);
     --secondaryOpacity: rgba(162, 210, 223, 0.5);
     --linkColor: #17a2b8;
@@ -86,7 +83,6 @@
     
     --buttonColor:#8534a3;
     
-    /* --url: url("./../images/purple-header-background.jpg"); */
     --mainOpacity: rgba(70, 52, 78, 0.5);
     --secondaryOpacity: rgba(56, 42, 63, 0.5);
     --linkColor: #17a2b8;
@@ -107,7 +103,6 @@ body * {
 }
 
 #top {
-    /* background-image: var(--url); */
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
@@ -115,34 +110,7 @@ body * {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    /* background: var(--url) no-repeat center center scroll; 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
 }
-
-/* Images with large size (more than 1024px) tend to not display on iOS devices */
-/* var() cannot work with media queries as @media is not an element and do not inherit from <html>*/
-/* However we can define variables inside media queries */
-/* Not working */
-/* @media screen and (max-width:1024px), (max-device-width:1024px){
-    .dark {
-        --url: url("./../images/black-header-background-iOS.jpg");
-    }
-
-    .blue {
-        --url: url("./../images/blue-header-background-iOS.jpg");
-    }
-
-    .purple {
-        --url: url("./../images/purple-header-background-iOS.jpg");
-    }
-} */
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
