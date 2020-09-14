@@ -13,11 +13,11 @@ function Heading(props) {
     }
 
     function changeBackground(style) {
-        if (style === "dark")
+        if (style == "dark")
             setBackground({backgroundImage: `url(${backgroundImage[1]})`});
-        else if (style === "blue")
+        else if (style == "blue")
             setBackground({backgroundImage: `url(${backgroundImage[2]})`});
-        else if (style === "purple")
+        else if (style == "purple")
             setBackground({backgroundImage: `url(${backgroundImage[3]})`});
         else
             setBackground({backgroundImage: `url(${backgroundImage[0]})`});
@@ -26,7 +26,7 @@ function Heading(props) {
     useEffect(() => {
         const savedTheme = localStorage.getItem("theme");
         changeBackground(savedTheme);
-    }); // sets the team based on localStorage on mount
+    }, []); // sets the team based on localStorage on mount
 
     function scrollTo(event) {
         document.getElementById(event.target.dataset.value).scrollIntoView(true);
