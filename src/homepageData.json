@@ -6,10 +6,10 @@
     "about": {
         "moreAboutMe1": "I build new projects just to tickle my brain & learn about new technologies.",
         "moreAboutMe2": "Graduated from NUS Bachelor of Electrical Engineering in 2019. Worked as a Marketing & Sales Engineer for a year. Currently studying at NUS-ISS Graduate Diploma in System Analysis.",
-        "topExpertise": "Fullstack developer with primary focus on Django + React",
+        "topExpertise": "Fullstack developer who is familiar with different technologies",
         "upTo10Skills": [
-            "Python", "Django", "JavaScript", "React", "HTML/CSS",
-            "C/C#", "ASP.NET", "SQL", "Java", "Git"
+            "Python", "Django", "JavaScript", "React", "Express/Node.js",
+            "C/C#", "ASP.NET Core", "Java", "SQL(SQL Server/MySQL)", "MongoDB"
         ],
         "contactMe": {
             "linkedin": "https://www.linkedin.com/in/ting-kai-chua-196211189/",
