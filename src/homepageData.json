@@ -47,6 +47,19 @@
             "githubLink": "https://github.com/Tingkai911/react-meme-generator",
             "hostLink": "https://tingkai911.github.io/react-meme-generator/",
             "disclaimer": ""
+        },
+        {
+            "projectTitle": "Recreating GitHub Jobs page",
+            "projectIntro": "Using React and Axios library to recreate GitHub Jobs page with GitHub Jobs API.",
+            "paragraph1": "I build this project learn how to integrate APIs into an React Appilcation.",
+            "paragraph2": "GitHub API accepts parameters such as description, location, page and full_time as a query string. GitHub Jobs API also supports Pagination by returning 50 search results per API call for each page. Adding a query string may be tedious to do in vanilia JavaScript fetch() method. However, Axios library allows us to pass parameters along with the base URL of the APi easily. A proxy server will have to be used to avoid CORS error.",
+            "paragraph3": "GitHub Jobs (recreated) is currently hosted on GitHub Pages.",
+            "technologiesUsed": [
+                "React", "Axios", "React Bootstrap"
+            ],
+            "githubLink": "https://github.com/Tingkai911/github-jobs",
+            "hostLink": "https://tingkai911.github.io/github-jobs/",
+            "disclaimer": "More information about GitHub Jobs API: https://jobs.github.com/api"
         }
     ],
     "homepageRepository": "https://github.com/Tingkai911/my-homepage"

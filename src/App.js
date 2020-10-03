@@ -31,13 +31,15 @@ import follow from './images/follow.jpg';
 // Import Portfolio.js image here and add it to the array -> portfolioImg
 import cs50blog from './images/cs50blog.jpg';
 import memegenerator from './images/memegenerator.jpg';
+import githubjobs2 from './images/githubjobs2.jpg';
 
 // Import ProjectDetail,js image here and add it to the array -> projectDetailImg
 import cs50blog2 from './images/cs50blog2.jpg';
+import githubjobs from './images/githubjobs.jpg';
 
 // One image allowed for eact Portfolio post
 const portfolioImg = [
-  cs50blog, memegenerator
+  cs50blog, memegenerator, githubjobs2
 ];
 
 // One image allowed for each ProjectDetail page, able to adjust image size with maxWidth and maxHeight
@@ -50,6 +52,11 @@ const projectDetailImg = [
     {
       image: memegenerator, 
       maxWidth: 800, 
+      maxHeight: 1000
+    },
+    {
+      image: githubjobs,
+      maxWidth: 800,
       maxHeight: 1000
     }
 ];
