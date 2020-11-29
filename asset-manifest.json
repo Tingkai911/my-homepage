@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-homepage/static/css/main.e9148352.chunk.css",
-    "main.js": "/my-homepage/static/js/main.a54d1c25.chunk.js",
-    "main.js.map": "/my-homepage/static/js/main.a54d1c25.chunk.js.map",
+    "main.js": "/my-homepage/static/js/main.ba66a8ce.chunk.js",
+    "main.js.map": "/my-homepage/static/js/main.ba66a8ce.chunk.js.map",
     "runtime-main.js": "/my-homepage/static/js/runtime-main.5367ca9b.js",
     "runtime-main.js.map": "/my-homepage/static/js/runtime-main.5367ca9b.js.map",
     "static/js/2.0812b77c.chunk.js": "/my-homepage/static/js/2.0812b77c.chunk.js",
@@ -20,14 +20,15 @@
     "static/media/githubjobs2.656b9bbf.jpg": "/my-homepage/static/media/githubjobs2.656b9bbf.jpg",
     "static/media/memegenerator.7f9d321b.jpg": "/my-homepage/static/media/memegenerator.7f9d321b.jpg",
     "static/media/profilepic.bdd4fc20.png": "/my-homepage/static/media/profilepic.bdd4fc20.png",
+    "static/media/proshop.1180a81c.png": "/my-homepage/static/media/proshop.1180a81c.png",
     "static/media/purple-header-background.82d06fcc.jpg": "/my-homepage/static/media/purple-header-background.82d06fcc.jpg",
-    "static/media/resume.b2989e20.pdf": "/my-homepage/static/media/resume.b2989e20.pdf",
+    "static/media/resume.fe21a33d.pdf": "/my-homepage/static/media/resume.fe21a33d.pdf",
     "static/media/white-header-background.9cfbadde.jpg": "/my-homepage/static/media/white-header-background.9cfbadde.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.5367ca9b.js",
     "static/js/2.0812b77c.chunk.js",
     "static/css/main.e9148352.chunk.css",
-    "static/js/main.a54d1c25.chunk.js"
+    "static/js/main.ba66a8ce.chunk.js"
   ]
 }
