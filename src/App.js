@@ -13,6 +13,9 @@ import "./css/default.css";
 // DO NOT change the keys, only change the values
 import data from "./homepageData.json";
 
+// Import your resume here
+import resume from "./docs/resume.pdf";
+
 // Import background images in Heading.js here and add it to the array -> backgroundImg
 import defaultBackground from "./images/white-header-background.jpg";
 import darkBackground from "./images/black-header-background.jpg";
@@ -21,9 +24,6 @@ import purpleBackground from "./images/purple-header-background.jpg";
 
 // Import your profie picture here
 import profilepic from "./images/profilepic.png";
-
-// Import your resume here
-import resume from "./docs/resume.pdf";
 
 // Import About.js image here
 import follow from "./images/follow.jpg";
