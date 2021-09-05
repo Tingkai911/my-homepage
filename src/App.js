@@ -13,9 +13,6 @@ import "./css/default.css";
 // DO NOT change the keys, only change the values
 import data from "./homepageData.json";
 
-// Import your resume here
-import resume from "./docs/resume.pdf";
-
 // Import background images in Heading.js here and add it to the array -> backgroundImg
 import defaultBackground from "./images/white-header-background.jpg";
 import darkBackground from "./images/black-header-background.jpg";
@@ -97,7 +94,7 @@ function App() {
                   profilepic={profilepic}
                   data={data.heading}
                 />
-                <About resume={resume} image={follow} data={data.about} />
+                <About image={follow} data={data.about} />
                 <Portfoilo
                   screenshots={portfolioImg}
                   data={data.project}

@@ -29,9 +29,6 @@ function About(props) {
             <h4>TOP EXPERTISE</h4>
             <p>
               {props.data.topExpertise}:{" "}
-              <a href={props.resume} target="_blank" rel="noopener noreferrer">
-                Download Resume
-              </a>
             </p>
 
             <div id="skills">

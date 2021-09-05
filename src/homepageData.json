@@ -1,15 +1,23 @@
 {
     "heading": {
         "name": "Ting Kai Chua",
-        "whatido": "A hobbyist developer working towards becoming a full-time software engineer."
+        "whatido": "Full-time Software Engineer."
     },
     "about": {
         "moreAboutMe1": "I build new projects just to tickle my brain & learn about new technologies.",
-        "moreAboutMe2": "Graduated from NUS Bachelor of Electrical Engineering in 2019. Previously worked as a Marketing & Sales Engineer. Currently studying at NUS-ISS Graduate Diploma in System Analysis.",
+        "moreAboutMe2": "Graduated from NUS Bachelor of Electrical Engineering in 2019 and NUS-ISS Graduate Diploma in System Analysis in 2021. Currently working as a Software Engineer.",
         "topExpertise": "Fullstack developer who is familiar with different technologies",
         "upTo10Skills": [
-            "Python", "JavaScript", "React", "Node.js & Express",
-            "C#", "ASP.NET", "Java", "Spring", "MySQL/PostgreSQL", "MongoDB"
+            "Python",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "C#",
+            ".NET Framework",
+            "Java",
+            "Spring Framework",
+            "MySQL",
+            "MongoDB"
         ],
         "contactMe": {
             "linkedin": "https://www.linkedin.com/in/ting-kai-chua-196211189/",
@@ -29,7 +37,16 @@
             "paragraph2": "User can view the blog posts without creating an account. Creating an account allows users to create their own blog posts, create a customise profile (such as uploading their own profile picture and toggle between light/dark mode), leave like/dislike and comments on other users's blog posts. There is also a password reset option in case users forgets their password.",
             "paragraph3": "CS50 Blog is currently hosted on Heroku with static files such as profile images of each user is stored in an AWS S3 bucket. Account creation is needed to try the full functionality of CS50 Blog.",
             "technologiesUsed": [
-                "Python", "Django", "HTML/CSS", "Bootstrap 4", "JavaScript", "SQLite (in development)", "PostgreSQL (in production)", "jQuery", "Heroku", "AWS (S3)"
+                "Python",
+                "Django",
+                "HTML/CSS",
+                "Bootstrap 4",
+                "JavaScript",
+                "SQLite (in development)",
+                "PostgreSQL (in production)",
+                "jQuery",
+                "Heroku",
+                "AWS (S3)"
             ],
             "githubLink": "https://github.com/Tingkai911/CS50Blog",
             "hostLink": "https://cs50-final-project-blog.herokuapp.com/",
@@ -42,7 +59,14 @@
             "paragraph2": "Proshop has full featured shopping cart with PayPal & credit/debit payments; product rating & review system; admin area to manage customers, products & orders; product search, carousel, pagination & more.",
             "paragraph3": "Proshop is currently hosted on Heroku.",
             "technologiesUsed": [
-                "JavaScript", "HTML/CSS", "MongoDB", "Express js", "React js", "Node.js", "React Bootstrap", "Heroku"
+                "JavaScript",
+                "HTML/CSS",
+                "MongoDB",
+                "Express js",
+                "React js",
+                "Node.js",
+                "React Bootstrap",
+                "Heroku"
             ],
             "githubLink": "https://github.com/Tingkai911/proshop",
             "hostLink": "https://tingkai911-proshop.herokuapp.com/",
@@ -55,7 +79,16 @@
             "paragraph2": "Users given Admin rights will have full access to all of CIMS's functionality, which includes but not limited to to add/delete products, restock/withdraw stock count and generate inventory usage reports. Users with Mechanic rights will only be able to withdraw the products needed for their work. Email notification will also be send to the users if they withdraw too much stock and it reaches a reorder level. (Note that the email notification functionality is currently disabled)",
             "paragraph3": "CIMS is currently hosted on Heroku. Account creation is needed to try the full functionality of CIMS.",
             "technologiesUsed": [
-                "Java", "Spring Boot", "Spring Security", "MySQL (in development)", "PostgreSQL (in production)", "Thymeleaf", "HTML/CSS", "Bootstrap", "JavaScript", "Heroku"
+                "Java",
+                "Spring Boot",
+                "Spring Security",
+                "MySQL (in development)",
+                "PostgreSQL (in production)",
+                "Thymeleaf",
+                "HTML/CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Heroku"
             ],
             "githubLink": "https://github.com/Tingkai911/java_ca",
             "hostLink": "https://cims-spring.herokuapp.com/",
