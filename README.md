@@ -28,3 +28,4 @@ All the CSS stylings are in src/css/default.css. Feel free to change the font si
 
 ## How to run and deploy the homepage?
 Run "npm start" in the command prompt to see the completed project. Refer to the [documentation](https://create-react-app.dev/docs/deployment/) by the React Developers on how to deploy the homepage to your desired host.
+- npm run deploy

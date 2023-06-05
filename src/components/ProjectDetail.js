@@ -118,14 +118,14 @@ function ProjectDetail(props) {
 
           <br />
           <br />
-          <a
-            href={props.data.hostLink}
-            className="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Try it out here
-          </a>
+          {/*<a*/}
+          {/*  href={props.data.hostLink}*/}
+          {/*  className="project-link"*/}
+          {/*  target="_blank"*/}
+          {/*  rel="noopener noreferrer"*/}
+          {/*>*/}
+          {/*  Try it out here*/}
+          {/*</a>*/}
           <p className="project-disclaimer">{disclaimer}</p>
         </div>
         <br />

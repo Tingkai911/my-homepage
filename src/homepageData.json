@@ -1,23 +1,23 @@
 {
     "heading": {
         "name": "Ting Kai Chua",
-        "whatido": "Full-time Software Engineer."
+        "whatido": "Experienced full-time Software Engineer."
     },
     "about": {
-        "moreAboutMe1": "I build new projects just to tickle my brain & learn about new technologies.",
-        "moreAboutMe2": "Graduated from NUS Bachelor of Electrical Engineering in 2019 and NUS-ISS Graduate Diploma in System Analysis in 2021. Currently working as a Software Engineer.",
-        "topExpertise": "Fullstack developer who is familiar with different technologies",
+        "moreAboutMe1": "Masters of Computer Science from Georgia Tech and PSM1 from Scrum.org. Currently working as a full time Software Engineer.",
+        "moreAboutMe2": "I build new projects just to tickle my brain & learn about new technologies.",
+        "topExpertise": "Backend developer who is familiar with Java and Go, as well as Python",
         "upTo10Skills": [
-            "Python",
-            "JavaScript",
-            "React",
-            "Node.js",
-            "C#",
-            ".NET Framework",
             "Java",
-            "Spring Framework",
+            "Spring Boot",
+            "Go",
+            "Python",
+            "Redis",
+            "Docker",
+            "Kafka",
             "MySQL",
-            "MongoDB"
+            "MongoDB",
+            "Agile/Jira/Confluence"
         ],
         "contactMe": {
             "linkedin": "https://www.linkedin.com/in/ting-kai-chua-196211189/",
@@ -32,7 +32,7 @@
     "project": [
         {
             "projectTitle": "CS50 Blog",
-            "projectIntro": "A functioninal blogging website build using Django, HTML/CSS with Bootstrap 4.",
+            "projectIntro": "A functional blogging website build using Django, HTML/CSS with Bootstrap 4.",
             "paragraph1": "This was a project I build in 2020 when I first learned the basics of programming and web design from Havard's CS50x. This was the project that get me interested in Full Stack Web Development. I build CS50 Blog to mimic the common functionalities that modern blogging and social media webpages can do.",
             "paragraph2": "User can view the blog posts without creating an account. Creating an account allows users to create their own blog posts, create a customise profile (such as uploading their own profile picture and toggle between light/dark mode), leave like/dislike and comments on other users's blog posts. There is also a password reset option in case users forgets their password.",
             "paragraph3": "CS50 Blog is currently hosted on Heroku with static files such as profile images of each user is stored in an AWS S3 bucket. Account creation is needed to try the full functionality of CS50 Blog.",
@@ -49,8 +49,8 @@
                 "AWS (S3)"
             ],
             "githubLink": "https://github.com/Tingkai911/CS50Blog",
-            "hostLink": "https://cs50-final-project-blog.herokuapp.com/",
-            "disclaimer": "Please allow a while for CS50 Blog to load as it is hosted on a free dyno on Heroku."
+            "hostLink": "",
+            "disclaimer": ""
         },
         {
             "projectTitle": "Proshop",
@@ -69,8 +69,8 @@
                 "Heroku"
             ],
             "githubLink": "https://github.com/Tingkai911/proshop",
-            "hostLink": "https://tingkai911-proshop.herokuapp.com/",
-            "disclaimer": "Please allow a while for Proshop to load as it is hosted on a free dyno on Heroku."
+            "hostLink": "",
+            "disclaimer": ""
         },
         {
             "projectTitle": "Car Inventory Management System",
@@ -91,8 +91,8 @@
                 "Heroku"
             ],
             "githubLink": "https://github.com/Tingkai911/java_ca",
-            "hostLink": "https://cims-spring.herokuapp.com/",
-            "disclaimer": "Please allow a while for CIMS to load as it is hosted on a free dyno on Heroku."
+            "hostLink": "",
+            "disclaimer": ""
         }
     ],
     "homepageRepository": "https://github.com/Tingkai911/my-homepage"

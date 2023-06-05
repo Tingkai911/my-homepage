@@ -25,3 +25,5 @@ yarn-error.log*
 .nojekyll
 .ionide
 .eslintcache
+
+.idea
