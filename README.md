@@ -32,4 +32,4 @@ Install NodeJS 14 and run "npm start"
 ## How deploy the homepage?
 Refer to the [documentation](https://create-react-app.dev/docs/deployment/) by the React Developers on how to deploy the homepage to your desired host. 
 
-For github pages, run "npm run deploy"
+For github pages, run "npm build" then run "npm run deploy".
