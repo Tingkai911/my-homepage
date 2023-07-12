@@ -57,16 +57,16 @@ function About(props) {
                 Linkedin: @{props.data.contactMe.linkedinUsername}
               </a>
             </span>
-            <br />
-            <span>
-              <a
-                href={props.data.contactMe.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter: @{props.data.contactMe.twitterUsername}
-              </a>
-            </span>
+            {/*<br />*/}
+            {/*<span>*/}
+            {/*  <a*/}
+            {/*    href={props.data.contactMe.twitter}*/}
+            {/*    target="_blank"*/}
+            {/*    rel="noopener noreferrer"*/}
+            {/*  >*/}
+            {/*    Twitter: @{props.data.contactMe.twitterUsername}*/}
+            {/*  </a>*/}
+            {/*</span>*/}
             <br />
             <span>Email: {props.data.contactMe.email} </span>
             <br />

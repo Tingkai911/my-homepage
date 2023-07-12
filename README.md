@@ -26,6 +26,10 @@ After adding the contents in homepageData.json. Save all your images in src/imag
 
 All the CSS stylings are in src/css/default.css. Feel free to change the font size, background color and images to customise the webpage.
 
-## How to run and deploy the homepage?
-Run "npm start" in the command prompt to see the completed project. Refer to the [documentation](https://create-react-app.dev/docs/deployment/) by the React Developers on how to deploy the homepage to your desired host.
-- npm run deploy
+## How to run in local?
+Install NodeJS 14 and run "npm start"
+
+## How deploy the homepage?
+Refer to the [documentation](https://create-react-app.dev/docs/deployment/) by the React Developers on how to deploy the homepage to your desired host. 
+
+For github pages, run "npm run deploy"
